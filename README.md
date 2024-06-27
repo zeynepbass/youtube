@@ -5,11 +5,12 @@
     <li>Filmleri başlığa göre bulmak için arama çubuğunu kullanın.
 </li>
     <li>Sonuçlar liste formatında görüntülenecektir.</li>
+        <li>GET : Ayrıntılarını görüntülemek için bir film öğesine tıklayın</li>
   </ul>
 
 
 
-    <h6>GET : Ayrıntılarını görüntülemek için bir film öğesine tıklayın.</h6>
+
      
 
 </div>
