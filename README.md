@@ -6,10 +6,10 @@
 </li>
     <li>Sonuçlar liste formatında görüntülenecektir.</li>
   </ul>
-    <ul>
-    <h7>CRUD işlemleri</h7>
 
-    <li>GET : Ayrıntılarını görüntülemek için bir film öğesine tıklayın.</li>
-    
-  </ul>
+
+
+    <h6>GET : Ayrıntılarını görüntülemek için bir film öğesine tıklayın.</h6>
+     
+
 </div>
