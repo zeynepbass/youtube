@@ -31,7 +31,13 @@ interface IconProps extends SVGProps<SVGSVGElement> {
 
 export function Icon({ name, className = 'size-6', ...props }: IconProps) {
   return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className={className} {...props}>
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      className={className}
+      {...props}
+    >
       <path d={paths[name]} />
     </svg>
   )

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="React, TypeScript ve Tailwind CSS ile geliştirilmiş YouTube arayüzü. Popüler videoları keşfedin, arayın ve izleyin."
+    />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f0f0f" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://youtube-v31.p.rapidapi.com" crossorigin />
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <title>YouTube Clone</title>
+    <script>
+      const watchMatch = location.pathname.match(/^\/watch\/([\w-]{11})$/)
+      if (watchMatch) {
+        const poster = document.createElement('link')
+        poster.rel = 'preload'
+        poster.as = 'image'
+        poster.fetchPriority = 'high'
+        poster.href = `https://i.ytimg.com/vi_webp/${watchMatch[1]}/hqdefault.webp`
+        document.head.append(poster)
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>Bu uygulamayı kullanmak için JavaScript'i etkinleştirin.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
