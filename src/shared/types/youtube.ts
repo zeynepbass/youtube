@@ -1,23 +1,9 @@
-export interface Thumbnail {
-  url: string
-  width: number
-  height: number
-}
-
-export interface Thumbnails {
-  default?: Thumbnail
-  medium?: Thumbnail
-  high?: Thumbnail
-  standard?: Thumbnail
-  maxres?: Thumbnail
-}
-
 export interface Snippet {
   publishedAt: string
   channelId: string
   title: string
   description?: string
-  thumbnails: Thumbnails
+  liveBroadcastContent?: 'live' | 'upcoming' | 'none'
   channelTitle: string
 }
 
@@ -35,7 +21,7 @@ export interface Video {
 }
 
 export interface SearchResult {
-  id: { kind: string; videoId?: string }
+  id: { videoId?: string }
   snippet: Snippet
 }
 
@@ -50,6 +36,7 @@ export interface VideoSummary {
   channelTitle: string
   publishedAt: string
   thumbnail: string
+  thumbnailSrcSet?: string
   viewCount?: string
   duration?: string
   description?: string

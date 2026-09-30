@@ -8,7 +8,10 @@ interface StatusMessageProps {
 
 export function StatusMessage({ title, description, action }: StatusMessageProps) {
   return (
-    <div role="status" className="mx-auto flex max-w-md flex-col items-center gap-3 py-24 text-center">
+    <div
+      role="status"
+      className="mx-auto flex max-w-md flex-col items-center gap-3 py-24 text-center"
+    >
       <h2 className="text-lg font-semibold">{title}</h2>
       {description && <p className="text-sm text-muted">{description}</p>}
       {action}
