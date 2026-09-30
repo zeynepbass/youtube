@@ -26,5 +26,4 @@ npm install
 cp .env.example .env
 npm run dev
 ```
-
 `.env` dosyasına [RapidAPI YouTube v3](https://rapidapi.com/ytdlfree/api/youtube-v31) anahtarınızı ekleyin.
